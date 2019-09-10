@@ -1,0 +1,111 @@
+.main {
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.main__site-theme {
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 746px;
+    width: 1150px;
+    margin: auto;
+  }
+}
+
+.main__title {
+  @include clr-margn-padng;
+  background-color: $light-grey-bg;
+  padding: 63px 30px 70px;
+  font-size: 27px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    padding: 82px 30px 92px;
+  }
+}
+
+.main__category {
+  margin-top: -93px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    margin: auto;
+    margin-top: -120px;
+  }
+}
+
+.main__manufacturing {
+  font-size: 15px;
+  margin: 30px 30px 59px 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 33px 50px 63px;
+    border: 1px solid $bg-30;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 55px auto 105px;
+    padding: 0 49px 0 0;
+    position: relative;
+  }
+}
+
+.main__catalog {
+  width: auto;
+}
+
+.product,
+.about-us {
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    margin: auto;
+  }
+}
+
+.product {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.main__wrapper {
+  display: block;
+  height: 7px;
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: 100% 100%;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+    display: block;
+    height: 17px;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 90% 100%;
+    height: 23px;
+  }
+}

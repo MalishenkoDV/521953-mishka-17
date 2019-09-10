@@ -1,0 +1,231 @@
+.product__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__description {
+  @include clr-margn-padng;
+  width: auto;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 22px 0 20px;
+  line-height: 1.6em;
+
+  @media (min-width: $tablet-width) {
+    align-self: flex-start;
+    padding: 5px 0 30px 0;
+    font-size: 17px;
+    width: 43%;
+    line-height: 1.8em;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 282px;
+
+    padding: 7px 0 30px 0;
+  }
+}
+
+.product__buying {
+  width: auto;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 0 22px;
+  line-height: 1.6em;
+
+  @media (min-width: $tablet-width) {
+    align-self: flex-start;
+    padding: 5px 0 0;
+    font-size: 17px;
+    width: 43%;
+    line-height: 1.8em;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 34%;
+  }
+}
+
+.product {
+  padding: 30px 30px 14px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 135px 50px 50px 225px;
+    box-sizing: border-box;
+  }
+}
+
+.product__name {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 0 0;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-content: center;
+    padding: 0;
+    margin-left: -157px;
+  }
+}
+
+.product__denotation {
+  @include clr-margn-padng;
+  font-size: 25px;
+  line-height: 1em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 0.6em;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 52px;
+  }
+}
+
+.product__attribute {
+  margin: 5px 0 0;
+  color: $seafoam-blue;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: center;
+    width: 125px;
+    line-height: 1em;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+    line-height: 1.1em;
+    align-self: center;
+    font-size: 17px;
+  }
+}
+
+.product__table {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  position: relative;
+  border-collapse: collapse;
+  table-layout: fixed;
+
+  @media (min-width: $tablet-width) {
+    align-self: flex-start;
+    font-size: 15px;
+    width: 43%;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 34%;
+    margin-top: 20px;
+  }
+}
+
+.product__table tr {
+  height: 2.7em;
+  text-align: left;
+  border-bottom: 1px solid lightgrey;
+
+  @media (min-width: $tablet-width) {
+    height: 2.6em;
+  }
+}
+
+.product__table th {
+  width: 37%;
+  // padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 33%;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    font-weight: 400;
+  }
+}
+
+.product__img {
+  margin-top: 30px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    display: block;
+    align-self: flex-end;
+    margin-top: -235px;
+    position: absolute;
+    right: 55px;
+    width: 43%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 45.7%;
+    right: 49px;
+    z-index: -1;
+    margin-top: -417px;
+    margin-left: 30px;
+  }
+}
+
+.product__img picture {
+  width: auto;
+}
+
+.product__price {
+  @include clr-margn-padng;
+  text-align: center;
+  margin: 18px 0 25px;
+  font-weight: 700;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    font-size: 19px;
+    margin: 50px 0 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+    margin: 30px 0;
+  }
+}
+
+.product__btn {
+  padding: 12px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 0;
+    margin: 0;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 97%;
+  }
+}
+
+.product__figure {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}

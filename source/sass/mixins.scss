@@ -1,0 +1,9 @@
+@mixin clear-list-style {
+  padding: 0;
+  list-style: none;
+}
+
+@mixin clr-margn-padng {
+  margin: 0;
+  padding: 0;
+}

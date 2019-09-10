@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <link href="css/style.min.css" rel="stylesheet">
+      <link href="fonts/opensanslight.woff2" type="font/woff2" rel="preload" as="font">
+      <link href="fonts/opensans.woff2" type="font/woff2" rel="preload" as="font">
+      <link href="fonts/opensansbold.woff2" type="font/woff2" rel="preload" as="font">
+      <link href="fonts/opensanslight.woff" type="font/woff" rel="preload">
+      <link href="fonts/opensans.woff" type="font/woff" rel="preload">
+      <link href="fonts/opensansbold.woff" type="font/woff" rel="preload">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>HTML Academy: Мишка - Форма заказки/выгрузки/загрузки/затаривания/заваривания/наваривания и других эпитетов</title>
+      <script src="js/picturefill.min.js" async></script>
+    </head>
+  <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <header class="header">
+      <div class="logo-wrapper">
+        <a class="header__logo" href="index.html" aria-label="Мишка. Магазин вещей, сделанных врукопашную!"></a>
+
+      </div>
+      <nav class="header__nav header__nav--nojs">
+        <button class="header__btn-burger btn" type="button"></button>
+        <div class="header__nav-wrapper">
+          <ul class="header__list nav header__list--site">
+            <li class="header__item"><a class="header__link " href="catalog.html">Каталог товаров</a></li>
+            <li class="header__item"><a class="header__link" href="form.html">Вязание на заказ</a></li>
+          </ul>
+
+          <ul class="header__list header__list--client">
+            <li class="header__item">
+              <a class="header__link header__link--search" href="#">
+                <svg class="icon-search" aria-label="search">
+                  <use xlink:href="#icon-search">
+                  </use>
+                </svg>
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link header__link--cart" href="#">
+                <svg class="icon-cart" aria-label="cart">
+                  <use xlink:href="#icon-cart">
+                  </use>
+                </svg>
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main__site-theme site__themes">
+        <ul class="site-theme__list site-theme__list--1">
+          <li>Новые поступления</li>
+          <li>Распродажа</li>
+        </ul>
+        <ul class="site-theme__list site-theme__list--2">
+          <li>Бесплатная доставка по России</li>
+        </ul>
+        <h1 class="main__title">Вязание на заказ</h1>
+      </div>
+
+      <form class="main__form form" method="post" action="https://echo.htmlacademy.ru" autocomplete="on" name="form" id="knitting_form" accept-charset="utf-8">
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами чтобы уточнить детали.</p>
+
+        <div class="fieldset__wrapper fieldset__wrapper--radio">
+          <div class="form__fieldset fieldset">
+            <h4 class="fieldset__title fieldset__title--radio">Тип</h4>
+            <div class="fieldset__container">
+              <input class="form__radio" type="radio" form="knitting_form" id="knitting_accessories" name="knitting" checked>
+              <label class="form__lbl-radio" for="knitting_accessories" tabindex="0">Аксессуар&nbsp;для интерьера</label>
+              <input class="form__radio" type="radio" form="knitting_form" id="knitting_toys" name="knitting">
+              <label class="form__lbl-radio" for="knitting_toys" tabindex="0">Детская&nbsp;игрушка</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="fieldset__wrapper fieldset__wrapper--checbx">
+          <div class="form__fieldset fieldset form__fieldset--checbx">
+            <h4 class="fieldset__title fieldset__title--checbx">Цвет</h4>
+            <div class="fieldset__container fieldset__container--checbx">
+              <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_white" checked>
+              <label class="form__lbl-checbx" for="knitting_c_white" tabindex="0">Белый</label>
+            </div>
+            <div class="fieldset__container fieldset__container--checbx">
+              <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_grey" checked>
+              <label class="form__lbl-checbx" for="knitting_c_grey" tabindex="0">Серый</label>
+            </div>
+            <div class="fieldset__container fieldset__container--checbx">
+              <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_tiffany">
+              <label class="form__lbl-checbx" for="knitting_c_tiffany" tabindex="0">«Тиффани»</label>
+            </div>
+            <div class="fieldset__container fieldset__container--checbx">
+              <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_black">
+              <label class="form__lbl-checbx" for="knitting_c_black" tabindex="0">Черный</label>
+            </div>
+            <div class="fieldset__container fieldset__container--checbx">
+              <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_pink">
+              <label class="form__lbl-checbx" for="knitting_c_pink" tabindex="0">Розовый</label>
+            </div>
+            <div class="fieldset__container fieldset__container--checbx">
+              <input class="form__input" type="checkbox" form="knitting_form" name="knitting-color" id="knitting_c_orange">
+              <label class="form__lbl-checbx" for="knitting_c_orange" tabindex="0">Оранжевый</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="fieldset__wrapper">
+          <div class="form__fieldset fieldset form__fieldset--data">
+            <h4 class="fieldset__title fieldset__title--data">ФИО</h4>
+            <div class="fieldset__container fieldset__container--data">
+              <label class="form__label form__label--text" for="client_name">Имя:</label>
+              <input class="form__input-text" type="text" name="name" placeholder="Введите ваше имя*" form="knitting_form" id="client_name" required>
+            </div>
+            <div class="fieldset__container fieldset__container--data">
+              <label class="form__label form__label--text" for="client_surname">Фамилия:</label>
+              <input class="form__input-text" type="text" name="name" placeholder="Укажите фамилию*" form="knitting_form" id="client_surname" required>
+            </div>
+            <div class="fieldset__container fieldset__container--data">
+              <label class="form__label form__label--text" for="client_fathers">Отчество:</label>
+              <input class="form__input-text" type="text" name="name" placeholder="Отчество, если желаете" form="knitting_form" id="client_fathers">
+            </div>
+          </div>
+        </div>
+
+        <div class="fieldset__wrapper fieldset__wrapper--tel">
+          <div class="form__fieldset fieldset form__fieldset--contacts">
+            <h4 class="fieldset__title fieldset__title--tel">тел</h4>
+            <div class="fieldset__container fieldset__container--contacts">
+              <label class="fieldset__lbl" for="client_tel"></label>
+              <input class="form__input-text form__input-text--tel" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" form="knitting_form" id="client_tel" required>
+              <svg class="icon icon-phone" aria-label="phone">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form__fieldset fieldset form__fieldset--contacts">
+            <h4 class="fieldset__title fieldset__title--email">E-mail</h4>
+            <div class="fieldset__container fieldset__container--contacts">
+              <label class="fieldset__lbl" for="client_email"></label>
+              <input class="form__input-text form__input-text--email" type="email" placeholder="Ваш Email*" form="knitting_form" id="client_email" required>
+              <svg class="icon icon-mail" aria-label="mail">
+                <use xlink:href="#icon-mail">
+                </use>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="fieldset__wrapper fieldset__wrapper--textarea">
+          <div class="form__fieldset fieldset">
+            <h4 class="fieldset__title fieldset__title--additionally">Доп</h4>
+            <div class="fieldset__container fieldset__container--textarea">
+              <textarea class="form__input-text form__input-text--textarea" name="text" rows="3" placeholder="Опишите все ваши пожелания к заказу" form="knitting_form" id="client_comment"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="form__fieldset-btn">
+          <p class="form__description-btn">*-Поля обязательные для заполнения</p>
+          <button type="submit" class="btn form__btn">Отправить заказ</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a class="footer__logo logo" href="index.html">
+          <svg class="logo-footer" aria-label="Магазин Мишка">
+            <use xlink:href="#logo-footer">
+            </use>
+          </svg>
+        </a>
+        <ul class="footer__social social">
+          <li class="social__btn social__btn--inst">
+            <a target="_blank" href="https://www.instagram.com/htmlacademy/">
+              <svg class="icon-insta" aria-label="instagram">
+                <use xlink:href="#icon-insta">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__btn social__btn--fb">
+            <a target="_blank" href="https://www.facebook.com/htmlacademy">
+              <svg class="icon-fb" aria-label="facebook">
+                <use xlink:href="#icon-fb">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__btn social__btn--twit">
+            <a target="_blank" href="https://twitter.com/htmlacademy_ru">
+              <svg class="icon-twitter" aria-label="twitter">
+                <use xlink:href="#icon-twitter">
+                </use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <span class="footer__copyright">
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано
+            <svg class="logo-htmlacademy" aria-label="Заходите на HTMLAcademy.ru" width="50" height="50">
+              <use xlink:href="#logo-htmlacademy">
+              </use>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

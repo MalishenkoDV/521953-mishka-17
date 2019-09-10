@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="fonts/opensanslight.woff2" type="font/woff2" rel="preload" as="font">
+    <link href="fonts/opensans.woff2" type="font/woff2" rel="preload" as="font">
+    <link href="fonts/opensansbold.woff2" type="font/woff2" rel="preload" as="font">
+    <link href="fonts/opensanslight.woff" type="font/woff" rel="preload">
+    <link href="fonts/opensans.woff" type="font/woff" rel="preload">
+    <link href="fonts/opensansbold.woff" type="font/woff" rel="preload">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Мишка -Предлагаем народное искуство! "Налетай, торопись! Раскупай живопись!"</title>
+    <script src="js/picture.js"></script>
+  </head>
+  <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="header">
+      <div class="logo-wrapper">
+        <a class="header__logo" href="index.html" aria-label="Мишка. Магазин вещей, сделанных врукопашную!"></a>
+
+      </div>
+      <nav class="header__nav header__nav--nojs">
+        <button class="header__btn-burger btn" type="button"></button>
+        <div class="header__nav-wrapper">
+          <ul class="header__list nav header__list--site">
+            <li class="header__item"><a class="header__link" href="catalog.html">Каталог товаров</a></li>
+            <li class="header__item"><a class="header__link" href="form.html">Вязание на заказ</a></li>
+          </ul>
+
+          <ul class="header__list header__list--client">
+            <li class="header__item">
+              <a class="header__link header__link--search" href="#">
+                <svg class="icon-search" aria-label="search">
+                  <use xlink:href="#icon-search">
+                  </use>
+                </svg>
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link header__link--cart" href="#">
+                <svg class="icon-cart" aria-label="cart">
+                  <use xlink:href="#icon-cart">
+                  </use>
+                </svg>
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="main__site-theme site__themes">
+        <ul class="site-theme__list site-theme__list--1">
+          <li>Новые поступления</li>
+          <li>Распродажа</li>
+        </ul>
+        <ul class="site-theme__list site-theme__list--2">
+          <li>Бесплатная доставка по России</li>
+        </ul>
+        <h1 class="main__title">Каталог товаров</h1>
+      </div>
+
+      <div class="main__catalog catalog">
+        <div class="catalog__card card">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+              <img class="card__img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Ушастый лушпай, у которого отняли морковку вегатериацы.">
+            </picture>
+
+          </a>
+          <div class="card__description">
+            <div>
+              <h6 class="card__title">Зайчик-попрыгайчик</h6>
+              <p class="card__characteristics">Рост 30 см, вес 200 г</p>
+            </div>
+            <div class="card__price">
+              <span>1 200 руб.</span>
+              <a href="#">
+                <svg class="icon-cart" aria-label="Добавитьв корзину">
+                  <use xlink:href="#icon-cart">
+                  </use>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="catalog__card card">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+              <img class="card__img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаный тазик, в который белье постельное не поместится. Разве что вертиканьно.">
+            </picture>
+          </a>
+          <div class="card__description">
+            <div>
+              <h6 class="card__title">Корзинка для белья</h6>
+              <p class="card__characteristics">Диаметр 15 см, высота 10 см</p>
+            </div>
+            <div class="card__price">
+              <span>690 руб.</span>
+              <a href="#">
+                <svg class="icon-cart" aria-label="Добавитьв корзину">
+                  <use xlink:href="#icon-cart">
+                  </use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__card card">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+              <img class="card__img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Чуть меньше мусорки и покрасиве. Вы ведь не будете ставить мусорку себе на стол на видное место? А это - будете!">
+            </picture>
+          </a>
+          <div class="card__description">
+            <div>
+              <h6 class="card__title">Большая корзинка<br> для игрушек</h6>
+              <p class="card__characteristics">Диаметр 30 см, высота 30 см</p>
+            </div>
+            <div class="card__price">
+              <span>1 500 руб.</span>
+              <a href="#">
+                <svg class="icon-cart" aria-label="Добавитьв корзину">
+                  <use xlink:href="#icon-cart">
+                  </use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <section class="main__manufacturing manufacturing">
+        <h3 class="manufacturing__title">Процесс производства</h3>
+        <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 320px)" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/videos-tablet@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <img class="manufacturing__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видосики, м-м-м...">
+        </picture>
+        <button type="button" aria-label="Воспроизвести"></button>
+        <p class="manufacturing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="manufacturing__btn btn" href="#">Сделать заказ</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a class="footer__logo logo" href="index.html">
+          <svg class="logo-footer" aria-label="Магазин Мишка">
+            <use xlink:href="#logo-footer">
+            </use>
+          </svg>
+        </a>
+        <ul class="footer__social social">
+          <li class="social__btn social__btn--inst">
+            <a target="_blank" href="https://www.instagram.com/htmlacademy/">
+              <svg class="icon-insta" aria-label="instagram">
+                <use xlink:href="#icon-insta">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__btn social__btn--fb">
+            <a target="_blank" href="https://www.facebook.com/htmlacademy">
+              <svg class="icon-fb" aria-label="facebook">
+                <use xlink:href="#icon-fb">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__btn social__btn--twit">
+            <a target="_blank" href="https://twitter.com/htmlacademy_ru">
+              <svg class="icon-twitter" aria-label="twitter">
+                <use xlink:href="#icon-twitter">
+                </use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <span class="footer__copyright">
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано
+            <svg class="logo-htmlacademy" aria-label="Заходите на HTMLAcademy.ru" width="50" height="50">
+              <use xlink:href="#logo-htmlacademy">
+              </use>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+
+    <div class="popup-wrapper">
+      <div class="popup">
+        <h3 class="popup__title">Добавить  в корзину</h3>
+        <p class="popup__text">Выберите размер:</p>
+        <form class="popup__form" id="popup-form">
+          <input class="popup__checkbox visually-hidden" id="popup-checkbox" form="popup-form" type="checkbox" name="popup-form-s" checked>
+          <label class="popup__label" for="popup-checkbox" aria-label="Маленький">S</label>
+          <input class="popup__checkbox visually-hidden" id="popup-checkbox2" form="popup-form" type="checkbox" name="popup-form-m">
+          <label class="popup__label" for="popup-checkbox2" aria-label="Средний">M</label>
+          <input class="popup__checkbox visually-hidden" id="popup-checkbox3" form="popup-form" type="checkbox" name="popup-for-l">
+          <label class="popup__label" for="popup-checkbox3" aria-label="Большой">L</label></form>
+        <button class="popup__btn btn" type="submit" form="popup-form">Добавить</button>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+.btn {
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  padding: 20px 0;
+  font-weight: 700;
+  border: 2px solid $greyish-brown;
+
+  @media (min-width: $tablet-width) {
+    width: 40%;
+    align-self: flex-start;
+    align-content: center;
+  }
+}
+
+.btn:hover,
+.btn:focus {
+  color: $light-text;
+}
+
+.btn:active {
+  color: $light-text-two;
+}

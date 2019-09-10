@@ -1,0 +1,54 @@
+.header {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $bg-30;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 1150px;
+    position: relative;
+    justify-content: flex-end;
+  }
+}
+
+.header__logo {
+  width: 200px;
+  height: 80px;
+  margin: auto;
+  display: inline-block;
+  background-image: url("../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 2px 0 0 4px;
+    align-content: flex-start;
+    height: 87px;
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    height: 80px;
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.header__logo:hover,
+.header__logo:focus {
+  opacity: 0.6;
+}
+
+.header__logo:active {
+  opacity: 0.3;
+}

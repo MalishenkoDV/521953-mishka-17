@@ -1,0 +1,129 @@
+.card {
+  position: relative;
+  // display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid lightgrey;
+  margin-top: 31px;
+  font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 314px;
+    margin: 45px 0 0;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card:active {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card__img {
+  display: inline;
+
+  @media (min-width: $tablet-width) {
+    @include clr-margn-padng;
+    order: 1;
+    vertical-align: bottom;
+    width: 332px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 313px;
+    height: 462px;
+  }
+}
+
+.card__description {
+  margin: 20px 28px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin: 24px 28px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 24px 25px 20px;
+    height: 153px;
+  }
+}
+
+.card__title {
+  @include clr-margn-padng;
+  font-size: 17px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.card__price {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 7px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid #bbbbbb;
+    padding: 22px 0 6px;
+    margin: 10px 0 0 5px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.card__characteristics {
+  // @include clear-list-style;
+  font-size: 13px;
+  border-bottom: 1px solid #bbbbbb;
+  padding: 12px 0 24px;
+  margin: 0 0 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    padding: 10px 0 10px;
+    margin: 0;
+    border: none;
+  }
+}
+
+// .card__characteristic:nth-last-of-type {
+//   @media (min-width: $tablet-width) {
+//     padding: 3px 0 162px;
+//   }
+// }
+
+.card__price a {
+  opacity: 0.2;
+}
+
+.card__price a:hover {
+  object-fit: contain;
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.card__price a:active {
+  fill: #63d1bb;
+  opacity: 0.3;
+}

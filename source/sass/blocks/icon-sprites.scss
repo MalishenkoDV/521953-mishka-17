@@ -1,0 +1,131 @@
+.icon-search,
+.icon-cart {
+  width: 18px;
+  height: 18px;
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    width: 19px;
+  }
+}
+
+.icon-search:hover,
+.icon-cart:hover {
+  fill: $seafoam-blue;
+  opacity: 1;
+}
+
+.icon-search:active,
+.icon-cart:active {
+  fill: $seafoam-blue;
+  opacity: 0.3;
+}
+
+.icon-insta {
+  width: 22px;
+  height: 21px;
+}
+
+.icon-fb {
+  width: 15px;
+  height: 28px;
+}
+
+.icon-twitter {
+  width: 23px;
+  height: 20px;
+}
+
+.icon-insta:hover,
+.icon-fb:hover,
+.icon-twitter:hover {
+  fill: $aqua-marine-two;
+  opacity: 1;
+}
+
+.icon-insta:active,
+.icon-fb:active,
+.icon-twitter:active {
+  fill: $aqua-marine-two;
+  opacity: 0.3;
+}
+
+.logo-htmlacademy {
+  width: 27px;
+  height: 34px;
+  fill: $seafoam-blue;
+}
+
+.logo-htmlacademy:hover {
+  fill: $aqua-marine-two;
+}
+
+.logo-htmlacademy:active {
+  opacity: 0.3;
+}
+
+.icon {
+  position: absolute;
+  top: -1px;
+  right: 9px;
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    top: 23px;
+    right: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 130px;
+    top: 45px;
+  }
+}
+
+.icon-phone {
+  width: 25px;
+  height: 25px;
+
+  @media (min-width: $desktop-width) {
+    right: 233px;
+    top: 23px;
+  }
+}
+
+.icon-mail {
+  width: 32px;
+  height: 34px;
+  right: 5px;
+
+  @media (min-width: $tablet-width) {
+    right: 72px;
+    top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 229px;
+    top: 21px;
+  }
+}
+
+.header__link--cart .icon-cart {
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+}
+
+.logo-footer {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 102px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 130px;
+    top: 45px;
+  }
+}

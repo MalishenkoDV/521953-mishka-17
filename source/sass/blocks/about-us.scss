@@ -1,0 +1,21 @@
+.about-us {
+  padding: 30px;
+  position: relative;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    padding: 48px 50px 51px;
+  }
+}
+
+.about-us::after {
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  position: absolute;
+}

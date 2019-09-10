@@ -1,0 +1,119 @@
+.site-theme__list {
+  @include clear-list-style;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.site-theme__list--1 {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 1px;
+    left: 50px;
+  }
+}
+
+.site-theme__list--1 li {
+  @media (min-width: $desktop-width) {
+    margin-right: 59px;
+    font-weight: 700;
+    font-size: 15px;
+  }
+}
+
+.site-theme__list--2 {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: absolute;
+    right: 60px;
+    letter-spacing: -1px;
+    top: -1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 62px;
+  }
+}
+
+.site-theme__slogan {
+  @include clr-margn-padng;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  width: 260px;
+  margin: auto;
+  padding-top: 70px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    padding-top: 153px;
+    width: auto;
+    margin: 0 80px;
+    line-height: 1.16;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    padding-top: 152px;
+    margin: 0 200px;
+    line-height: 58px;
+  }
+}
+
+.site-theme {
+  padding: 0;
+  height: 373px;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat $light-grey-bg;
+  background-position: center -20px;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/hero-tablet@1x.jpg") no-repeat $light-grey-bg;
+    background-position: center;
+    height: 746px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/hero-desktop@1x.jpg") no-repeat $light-grey-bg;
+    background-position: center;
+  }
+}
+
+.site__themes {
+  @media (min-width: $desktop-width) {
+    height: auto;
+  }
+}
+
+.site__themes .main__title {
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    padding: 86px 50px 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 52px;
+    padding: 83px 50px 92px;
+  }
+}
+
+.site-theme::before,
+.site__themes::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    bottom: -15px;
+    width: 100%;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    height: 30px;
+    z-index: 23;
+    background-size: 100% 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -15px;
+  }
+}
